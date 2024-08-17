@@ -32,7 +32,19 @@ export default function EventDetailPage({ params }: { params: { id: string } }) 
   }
 
   useEffect(() => {
-    fetchEventDetails()
+    const fetchEventDetails = async () => {
+      try {
+        const response = await api.get(`api/v1/events/${eventId}/`)
+        if (response.status === 200) {
+          setEvent(response.data)
+        } else {
+          console.error('Failed to fetch event details')
+        }
+      } catch (error) {
+        console.error('Error fetching event details:', error)
+      }
+    }
+    fetchEventDetails();
   }, [eventId])
 
   if (!event) {

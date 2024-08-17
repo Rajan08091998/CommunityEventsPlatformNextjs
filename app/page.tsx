@@ -65,15 +65,15 @@ export default function Home() {
           <h2 className="text-3xl font-semibold mb-8">What Our Users Say</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="p-6 bg-white shadow-lg rounded-lg dark:bg-gray-800 dark:text-white">
-              <p>"Eventure made it so easy for me to find and join events that I care about!"</p>
+              <p>Eventure made it so easy for me to find and join events that I care about!</p>
               <p className="mt-4 text-sm text-gray-600">- Alex P.</p>
             </div>
             <div className="p-6 bg-white shadow-lg rounded-lg dark:bg-gray-800 dark:text-white">
-              <p>"I love how Eventure recommends events that match my interests."</p>
+              <p>I love how Eventure recommends events that match my interests.</p>
               <p className="mt-4 text-sm text-gray-600">- Jamie L.</p>
             </div>
             <div className="p-6 bg-white shadow-lg rounded-lg dark:bg-gray-800 dark:text-white">
-              <p>"The best platform for discovering local events and meeting new people."</p>
+              <p>The best platform for discovering local events and meeting new people.</p>
               <p className="mt-4 text-sm text-gray-600">- Chris M.</p>
             </div>
           </div>
